@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View } from 'react-native';
+import BlankScreen from './src/BlankScreen';
 
-class BlankScreen extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, backgroundColor: 'white' }} />
-    );
-  }
-}
+const App = () => {
+  return (
+    <View style={{ flex: 1 }}>
+      <BlankScreen />
+    </View>
+  );
+};
 
-export default BlankScreen;
+export default App;
